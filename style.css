@@ -1,0 +1,211 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.8;
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 2px solid yellow;
+}
+
+section {
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Experience grid */
+/* Experience vertical layout */
+.experience-grid {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  display: block;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 180px; /* ensures card doesn't collapse with less content */
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+/* Portfolio (Projects) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden; /* prevent image overflow */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px; /* uniform height */
+  object-fit: contain; /* fit entire logo */
+  object-position: center;
+  background: #fff; /* optional: fill empty space */
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.project-card h3 {
+  margin: 0.5rem 0;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+/* Education */
+.education {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.degree {
+  background: #fff8e1;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.degree h3 {
+  margin: 0 0 0.5rem;
+}
+
+.certs h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.certs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certs li {
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+/* Contact */
+.links a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 2px solid transparent;
+}
+
+.links a li{
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 2px solid transparent;
+}
+
+.links a:hover {
+  border-bottom: 2px solid yellow;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+}
+.cert-list {
+  list-style: none; /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.cert-list li {
+  margin: 0.5rem 0;
+  font-weight: normal; /* normal weight */
+  font-size: 1rem; /* normal size */
+}
+
+.cert-list li a {
+  text-decoration: none; /* remove underline */
+  color: #000; /* match normal text */
+  font-weight: normal; /* normal weight */
+}
+
+.cert-list li a:hover {
+  color: #555; /* subtle hover effect */
+}
