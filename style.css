@@ -209,3 +209,31 @@ footer {
 .cert-list li a:hover {
   color: #555; /* subtle hover effect */
 }
+
+.resume-buttons {
+  margin: 1rem 0;
+  position: relative; /* needed for hard-btn absolute inside */
+  height: 100px; /* gives space for the moving button */
+}
+
+.resume-buttons button {
+  margin: 0 10px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #ff3c78;
+  color: #fff;
+}
+
+#hard-btn {
+  position: relative;
+}
+
+#hard-msg {
+  margin-top: 1rem;
+  color: #ff3c78;
+  font-weight: bold;
+}
