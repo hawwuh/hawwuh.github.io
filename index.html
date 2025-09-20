@@ -196,7 +196,7 @@
 
     // Easy button just downloads resume
     easyBtn.addEventListener('click', () => {
-      window.open('./Hassan_Resume.pdf', '_blank');
+      window.open('./Hassan_Alghanim_Resume.pdf', '_blank');
     });
 
     // Hard button hover (moving logic)
@@ -227,7 +227,7 @@
       // If reached max fails
       if (failCount >= maxFails) {
         hardMsg.textContent = "You lost the QA Challenge! 😅 Here's the resume anyway.";
-        window.open('./Hassan_Resume.pdf', '_blank'); // auto-download
+        window.open('./Hassan_Alghanim_Resume.pdf', '_blank'); // auto-download
         // Reset button to normal
         hardBtn.style.position = 'relative';
         hardBtn.style.left = '0';
@@ -239,7 +239,7 @@
 
     // Hard button click
     hardBtn.addEventListener('click', () => {
-      window.open('./Hassan_Resume.pdf', '_blank');
+      window.open('./Hassan_Alghanim_Resume.pdf', '_blank');
       hardMsg.textContent = "You won the QA Challenge! 🎉 Downloading resume...";
       // Reset button
       hardBtn.style.position = 'relative';
