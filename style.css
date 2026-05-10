@@ -201,39 +201,37 @@ footer {
 }
 
 .cert-list li a {
-  text-decoration: none; /* remove underline */
-  color: #000; /* match normal text */
-  font-weight: normal; /* normal weight */
+  text-decoration: none;
+  color: #000;
+  font-weight: normal;
+  background-image: linear-gradient(transparent 60%, #fff176 60%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  padding: 0 2px;
 }
 
 .cert-list li a:hover {
-  color: #555; /* subtle hover effect */
+  background-size: 100% 100%;
 }
 
-.resume-buttons {
-  margin: 1rem 0;
-  position: relative; /* needed for hard-btn absolute inside */
-  height: 100px; /* gives space for the moving button */
+#roles {
+  text-align: center;
 }
 
-.resume-buttons button {
-  margin: 0 10px;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background-color: #ff3c78;
-  color: #fff;
+#roles .roles-meme {
+  display: block;
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
-#hard-btn {
-  position: relative;
-}
-
-#hard-msg {
-  margin-top: 1rem;
-  color: #ff3c78;
-  font-weight: bold;
+.roles-caption {
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+  color: #777;
+  font-style: italic;
 }
