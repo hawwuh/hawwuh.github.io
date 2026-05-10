@@ -215,69 +215,23 @@ footer {
   background-size: 100% 100%;
 }
 
-.certs-hint {
-  font-size: 0.9rem;
-  color: #777;
-  margin: 0 0 0.5rem;
+#roles {
+  text-align: center;
 }
 
-/* Test Report section */
-#test-report .test-report {
-  max-width: 600px;
+#roles .roles-meme {
+  display: block;
+  max-width: 420px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  font-family: "Menlo", "Monaco", monospace;
-  text-align: left;
-  background: #0d1117;
-  color: #e6edf3;
   border-radius: 12px;
-  padding: 1.2rem 1.5rem;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
-.test-row {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.45rem 0;
-  border-bottom: 1px solid #21262d;
+.roles-caption {
+  margin: 0.8rem 0 0;
   font-size: 0.95rem;
-}
-
-.test-row:last-of-type {
-  border-bottom: none;
-}
-
-.test-row .status {
-  display: inline-block;
-  min-width: 56px;
-  text-align: center;
-  padding: 0.1rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
-.test-row.pass .status {
-  background: #238636;
-  color: #fff;
-}
-
-.test-row.flaky .status {
-  background: #d29922;
-  color: #1c1c1c;
-}
-
-.test-row.fail .status {
-  background: #da3633;
-  color: #fff;
-}
-
-.test-summary {
-  margin-top: 0.9rem;
-  padding-top: 0.7rem;
-  border-top: 1px solid #21262d;
-  font-size: 0.85rem;
-  color: #8b949e;
-  text-align: center;
+  color: #777;
+  font-style: italic;
 }
